@@ -1,4 +1,3 @@
-require 'pry'
 def substrings_at_start(string)
   arr = []
   string.size.times do |n|
@@ -33,7 +32,6 @@ end
 def palindromes(string)
   array = []
   substrings(string).each do |str|
-    #binding.pry
     array << str if palindrome?(str)
   end
   array
